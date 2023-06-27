@@ -72,8 +72,138 @@ button[type="submit"]:hover {
 }
 
 
+.mothers_love{
+    width: 90%;
+    height: inherit;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 25%;
+    flex-wrap: wrap;
+  
+}
 
-.mothers_love h2 {
+h2 {
     text-align: center;
     margin-top: 20px;
+}
+
+.love_meal{
+    margin-top: 2%;
+    width: 30%;
+    height: inherit;
+    background-color: #00DFA2;
+    border: 15px white solid;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.love_meal h3{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.love_meal p{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 15px;
+}
+.love_meal img{
+    width: 100%;
+    height: 80%;
+    margin: auto;
+}
+
+
+.but{
+    font-size: 25px;
+    width: 50%;
+    padding: 15px;
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    background-color: #FF0060;
+    border-radius: 15%;
+}
+
+.but:hover{
+    background-color: #efef0cf3;
+    cursor: pointer;
+    
+}
+
+
+
+.love_detail{
+    display: none; 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+
+ /**
+  * CSS filr
+  * * Mobile S css For responsive website
+  * ! here the display is block for body but not for the recipe list
+  * ? the max width for this media query is 320px and known as S _ Mobile
+  * TODO: Here the main is to implement the user_interface and responsiveness
+  */
+
+@media screen and (max-width:320px) {
+    
+    body{
+        display: block;
+    }
+    
+    header nav form{
+        width: 100%;
+        margin-top: 25px;
+    }
+    
+    form input[type="text"], button[type="submit"] {
+        font-size: 14px;
+    }
+
+    .mothers_love{
+        width: 90%;
+        height: inherit;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .love_meal{
+        margin-top: 30px;
+        width: 100%;
+        height: inherit;
+        border: 15px white solid;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+    }
+
+    .love_meal h3 {
+        font-size: 1.5rem;
+    }
+
+    .but {
+        font-size: 25px;
+        width: 80%;    
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
 }
